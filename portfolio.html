@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  </head>
+  
+  <body>
+    
+  <header>
+    <p>aaa</p>
+  </header>
+  
+  <main>
+
+    <div class="rogo">
+      <a href="portfolio.html"><img class="rogo" src="images/rogo.jpg" width="250" height="230"></a>
+    </div>
+    
+  <div class="none1">
+    <div class="menu-btn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    <div class="menu">
+      <div class="menu__item">
+        <a href="portfolio.html" class="pink-">
+          <img src="images/fwa.png" width="30" height="30">Home</a>
+      </div>
+      
+      <div class="menu__item">
+        <a href="design.html" class="green-">
+          <img src="images/fwa.png" width="30" height="30">Design</a>
+      </div>
+      
+      <div class="menu__item">
+        <a href="program-ok.html" class="blue-">
+          <img src="images/fwa.png" width="30" height="30">Program</a>
+      </div>
+      
+      <div class="menu__item">
+        <a href="other-ok.html" class="orange-">
+          <img src="images/fwa.png" width="30" height="30">Other</a>
+      </div>
+      
+      <div class="menu__item">
+        <a href="about-ok.html" class="yellow-">
+          <img src="images/fwa.png" width="30" height="30">About</a>
+      </div>
+    </div>
+  </div>
+
+    
+  <div class="none2"> 
+    <nav>
+      <ul>
+       <li class="current1">
+         <a href="portfolio.html">
+           <img src="images/fwa.png" width="30" height="30">Home</a>
+        </li>
+
+       <li class="current2">
+         <a href="design.html">
+           <img src="images/fwa.png" width="30" height="30">Design</a>
+        </li>
+
+       <li class="current3">
+         <a href="program-ok.html">
+           <img src="images/fwa.png" width="30" height="30">Program</a>
+        </li>
+      
+       <li class="current4">
+         <a href="other-ok.html">
+           <img src="images/fwa.png" width="30" height="30">Other</a>
+        </li>
+      
+      <li class="current5">
+        <a href="about-ok.html">
+          <img src="images/fwa.png" width="30" height="30">About</a>
+        </li>
+     </ul>
+    </nav>
+  </div>
+    
+  
+    <!--<div id="page"></div>
+    <font size="+3" color="orange">-->
+    
+    <!--<img id="rogo" src="images/yuuhatsu.gif">-->
+  <div class="repeat">
+    <img class="mainvisual" src="images/yuuhatsu3.png" alt="優初のポートフォリオ・サイト" width="2000" height="550" z-index: 1>
+    <img class="mainvisual-" src="images/yuuhatsu4.png" alt="優初のポートフォリオ・サイト" width="1000" height="450">
+    <p class="main-p">"優しさ"と"初心"を忘れない</p>
+  </div>
+    
+    
+  <menu>
+    <ul>
+    <div class="up">
+       <li class="pink">
+           <a href="portfolio.html">
+             <img class="current1" src="images/mark1.gif" width="350" height="350"></a><p class="current1-">Home</p>
+        </li>
+    
+        <li class="blue">
+          <a href="program-ok.html">
+            <img class="current3" src="images/mark3.gif" width="380" height="350"></a><p class="current3-">Program</p>
+        </li>
+     
+        <li class="yellow">
+          <a href="about-ok.html"><img class="current5" src="images/mark5.gif" width="360" height="340"></a><p class="current5-">About</p>
+        </li>
+    </div>
+      
+    <div class="low">
+        <li class="green">
+          <a href="design.html"><img class="current2" src="images/mark2.gif" width="370" height="330"></a>
+          <p class="current2-">Design</p>
+        </li>
+      
+        <li class="orange">
+          <a href="other-ok.html"><img class="current4" src="images/mark4.gif" width="370" height="350"></a>
+          <p class="current4-">Other</p>
+      </li>
+    </div>
+    </ul>
+  </menu>
+
+  </main>
+    
+  <footer>
+    <a href="https://twitter.com/yuuhatsu_fancy"><img src="images/twitter.png" width="50" height="50"></a><p>Twitter</p>
+    <a href="https://www.instagram.com/yuu.2434/"><img src="images/instagram.png" width="45" height="45"></a><p>Instagram</p>
+    
+    <a href="mailto:yuu623popfancy@gmail.com">✉</a><p>mail</p>
+  </footer>
+    
+  <script>
+    $(function(){
+      $('.pink').hover(function(){
+        $(this).stop().animate({"opacity":"0.5"});
+        $('.current1-').fadeIn();
+      },function(){
+        //$('.current1-').fadeOut(900);
+        $(this).stop().animate({"opacity":"1"});
+        $('.current1-').fadeOut();
+      });
+    });
+    
+    $(function(){
+      $('.blue').hover(function(){
+        $(this).stop().animate({"opacity":"0.5"});
+        $('.current3-').fadeIn();
+      },function(){
+        //$('.current1-').fadeOut(900);
+        $(this).stop().animate({"opacity":"1"});
+        $('.current3-').fadeOut();
+      });
+    });
+    
+    
+    $(function(){
+      $('.yellow').hover(function(){
+        $(this).stop().animate({"opacity":"0.5"});
+        $('.current5-').fadeIn();
+      },function(){
+        //$('.current1-').fadeOut(900);
+        $(this).stop().animate({"opacity":"1"});
+        $('.current5-').fadeOut();
+      });
+    });
+    
+    $(function(){
+      $('.green').hover(function(){
+        $(this).stop().animate({"opacity":"0.5"});
+        $('.current2-').fadeIn();
+      },function(){
+        //$('.current1-').fadeOut(900);
+        $(this).stop().animate({"opacity":"1"});
+        $('.current2-').fadeOut();
+      });
+    });
+    
+    $(function(){
+      $('.orange').hover(function(){
+        $(this).stop().animate({"opacity":"0.5"});
+        $('.current4-').fadeIn();
+      },function(){
+        //$('.current1-').fadeOut(900);
+        $(this).stop().animate({"opacity":"1"});
+        $('.current4-').fadeOut();
+      });
+    });
+    
+    
+    $(function(){
+      $('.menu-btn').on('click', function(){
+        $('.menu').toggleClass('is-active');
+      });
+    }());
+  </script>
+  
+  </body>
+</html>

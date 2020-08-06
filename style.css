@@ -1,0 +1,852 @@
+@charset "UTF-8";
+/* CSS Document 670px*/
+/*@media screen and(max-width: 460px)
+{*/
+@media (min-width: 500px) and (max-width: 999px)
+{
+  body {
+  margin:0;
+  padding:0;
+  /*text-align:left;*/
+  background-color: #fff;
+  font-size:0.85em;
+  }
+  
+   header{
+    text-align: center;
+    background-color: #FF99CC;
+    max-width: 100%;
+    margin: 0 auto;
+    opacity: 0.8;
+  }
+  header p{
+    color: #FF99CC;
+  }
+  
+  
+
+  main{
+    /*border-bottom:1px solid #ccc;*/
+    position:relative;
+    background-color: #fff;
+  }
+  
+  
+  main p{
+    /*font-size:200%;*/
+    text-align: center;
+    /*border-bottom:1px solid #fff;*/
+    /*height:200px;*/
+  }
+
+  div.none2 ul{
+    padding: 0;
+    /*border-top: 1px solid #000000;*/
+    /*display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+  }
+  
+  
+  main div.rogo{
+    max-width: 50%;
+    margin: 0 auto;  
+  }
+
+  
+ /*----------------------------
+* メニュー開閉ボタン
+*----------------------------*/
+.menu-btn{
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 4;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF;
+  color: gray;
+}
+
+  
+/*----------------------------
+* メニュー本体
+*----------------------------*/
+.menu{
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255,255,255,0.8);
+  /*opacity: 0.2;*/
+}
+.menu__item{
+  width: 100%;
+  height: auto;
+  padding: .7em 1em;
+  text-align: center;
+  color: gray;
+  box-sizing: border-box;
+}
+.menu__item a{
+  text-decoration: none;
+  color: #555;
+  font-weight: bold;
+  font-size: large;
+}
+  
+ /*.menu__item a.pink- { 
+    color: hotpink;
+  }*/
+  
+  
+  
+  
+
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+
+/* アニメーション前のメニューの状態 */
+.menu{
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity .3s linear;
+}
+/* アニメーション後のメニューの状態 */
+.menu.is-active{
+  pointer-events: auto;
+  opacity: 1;
+}
+  
+/*メニューバー*/
+.none2{
+  display: none;
+}
+  
+  .repeat{
+    position: relative;
+  }
+  
+  img.mainvisual{
+    display: none;
+  }
+  
+  img.mainvisual-{
+    max-width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .main-p{
+    position: absolute;
+    z-index: 2;
+    margin-top: 45%;
+    /*top: 20%;*/
+    left: 30%;
+    color: black;
+    font-size: 0px;
+    font-weight: bold;
+    background-color: white;
+    opacity: 0.5;
+  }
+  
+  
+  
+  menu ul{
+    /*text-align: center;*/
+    /*display: table;*/
+    /*min-width: 40%;
+    margin: 0 auto;*/
+    text-decoration: none;
+  }
+  
+  /*menu .up{
+    float:left;
+    padding-left: 130px;
+  }
+  menu .low{
+    float:left;
+    padding-left: 240px;
+  }*/
+  .pink{
+    position: relative; 
+    /*top: 3000%;
+    right: 1%;*/
+  }
+  menu .current1{
+    position: absolute;
+    z-index: 1;
+    top: 2400%;
+  }
+  menu .current1-{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 3000%;
+    left: 33%;
+    font-size: xx-large;
+    color: black;
+  }
+   
+  menu .blue{
+    position: relative; 
+  }
+  menu .current3{
+    position: absolute;
+    z-index: 1;
+    top: 3700%;
+  }
+  menu .current3-{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 4300%;
+    left: 28%;
+    font-size: xx-large;
+    color: black;
+  }
+  
+  menu .yellow{
+    position: relative; 
+  }
+  menu .current5{
+    position: absolute;
+    z-index: 1;
+    top: 5155%;
+  }
+  menu .current5-{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 5700%;
+    left: 33%;
+    font-size: xx-large;
+    color: black;
+  }
+  
+  menu .green{
+    position: relative; 
+  }
+  menu .current2{
+    position: absolute;
+    z-index: 1;
+    top: 6600%;
+  }
+  menu .current2-{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 7150%;
+    left: 33%;
+    font-size: xx-large;
+    color: black;
+  }
+  
+  menu .orange{
+    position: relative; 
+  }
+  menu .current4{
+    position: absolute;
+    z-index: 1;
+    top: 8000%;
+  }
+  menu .current4-{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 8600%;
+    left: 35%;
+    font-size: xx-large;
+    color: black;
+  }
+  
+footer{
+    /*position: static;*/
+    background-color: #FF99CC;
+    max-width: 100%;
+    margin-top: 2000px;
+    height: 200px;
+    /*margin: 0 auto;*/
+    opacity: 0.8;
+  }
+
+  /*footer a{
+    float: left;
+    text-decoration: none;
+    font-size: 600%;
+    color: white;
+    margin-top: 2%;
+    margin-left: 48%;
+    margin-right: 5%;
+  }*/
+  footer p{
+    float: left;
+    font-size: 0%;
+    color: white;
+  }
+  
+  footer img{
+    /*padding-left: 10%;*/
+    padding-top: 10%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  footer a{
+    max-width: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+    color: white;
+    font-size: 350%;
+    padding-left: 18%;
+  }
+}
+
+
+
+
+
+/*パソコン画面 1001px 671px*/
+@media (min-width: 1000px) and (max-width: 2000px)
+{
+  body {
+  margin:0;
+  padding:0;
+  /*text-align:left;*/
+  background-color: #fff;
+  font-size:0.85em;
+  }
+
+  header{
+    text-align: center;
+    background-color: #FF99CC;
+    max-width: 100%;
+    margin: 0 auto;
+    opacity: 0.8;
+  }
+  header p{
+    color: #FF99CC;
+  }
+
+   
+  
+  main{
+    /*border-bottom:1px solid #ccc;*/
+    position:relative;
+    background-color: #fff;
+  }
+  
+  
+  main p{
+    /*font-size:200%;*/
+    text-align: center;
+    /*border-bottom:1px solid #fff;*/
+    /*height:200px;*/
+  }
+
+  div.none2 ul{
+    padding: 0;
+    /*border-top: 1px solid #000000;*/
+    /*display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+  }
+  
+  
+  div.rogo{
+    max-width: 15%;
+    margin: 0 auto;  
+  }
+  
+  
+  .none1{
+    display: none;
+  }
+
+
+/*メニューバー*/
+  nav ul{
+    display: table;
+    max-width: 100%;
+    margin:　0 auto;
+    /*padding: 0;*/
+    padding-left: 10%;
+    padding-right: 10%;
+    
+    text-align: center;
+  }
+  nav ul li{
+    display: table-cell;
+    min-width: 50px;
+    text-align:center;
+    /*padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;*/
+  }
+  nav ul li a{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5%;
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+  }
+  
+  nav ul li.current1:hover{
+    background-color: #FFCCFF;
+  }
+  nav ul li.current2:hover{
+    background-color: #CCFF99;
+  }
+  nav ul li.current3:hover{
+    background-color: #CCFFFF;
+  }
+  nav ul li.current4:hover{  
+    background-color: #FFCC99;
+  }
+  nav ul li.current5:hover{
+    background-color: #FFFF99;
+  }
+  
+  img.mainvisual{
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  img.mainvisual-{
+    display: none;
+  }
+  
+  .main-p{
+    position: absolute;
+    z-index: 2;
+    margin-top: 4%;
+    /*top: 20%;*/
+    left: 30%;
+    color: black;
+    font-size: 0px;
+    font-weight: bold;
+    background-color: white;
+    opacity: 0.5;
+  }
+  /*div.up li{
+    /*text-align: center;*/
+    /*display: table;
+    max-width: 50%;
+    margin: 0 auto;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-decoration: none;
+  }
+  /*div.up img{
+    text-align: center;
+  }*/
+  
+  /*div.low li{
+     /*text-align: center;*/
+     /*display: table;
+     max-width: 50%;
+     margin: 0 auto;
+     padding-left: 20%;
+     padding-right: 20%;
+     text-decoration: none;
+  }
+  /*div.low img{
+     text-align: center;
+  }*/
+  
+  
+ /*menu ul{
+    display: table;
+    max-width: 100%;
+    margin:　0 auto;
+    /*padding: 0;*/
+    /*padding-left: 10%;
+    padding-right: 10%;*/
+    
+    /*text-align: center;
+  }*/
+  menu ul {
+    max-width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 100%;
+  }
+  
+  menu ul li{
+    display: table-cell;
+    /*min-width: 50%;/*50px*/
+    text-align:center;
+    
+    /*padding-right: 10%;
+    /*padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;*/
+  }
+  
+  
+  .up{
+    /*float:left;
+    /*padding-left: 130px;*/
+    margin-left: 50%;
+    margin-right: 70%;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .low{
+    /*float:left;*/
+    margin-left: 800%;
+    /*margin-right: 50%;
+    /*padding-left: 40%;*/
+    display: flex;
+    justify-content: center;
+    /*max-width: 100%;
+    margin: 0 auto;*/
+  }
+  
+  
+  .pink{
+    position: relative; 
+  }
+  
+  menu .current1{
+    position: absolute;
+    z-index: 1;
+    /*top: 3000%;*/
+    left: -50px;
+    /*left: 40%;*/
+  }
+  menu .current1-{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 118px;
+    left: 80px;
+    /*left: 85px;*/
+    font-size: xx-large;
+    color: black;
+  }
+   
+  menu .blue{
+    position: relative; 
+  }
+  menu .current3{
+    position: absolute;
+    z-index: 1;
+    /*left: 80%;*/
+    left: 300px;
+  }
+  menu .current3-{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    left: 400px;
+    font-size: xx-large;
+    color: black;
+  }
+  
+  menu .yellow{
+    position: relative; 
+  }
+  menu .current5{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 620px;
+  }
+  menu .current5-{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 120px;
+    left: 750px;
+    font-size: xx-large;
+    color: black;
+  }
+  
+  menu .green{
+    position: relative; 
+  }
+  menu .current2{
+    position: absolute;
+    z-index: 1;
+    top: 290px;
+    left: 110px;
+  }
+  menu .current2-{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 395px;
+    left: 240px;
+    font-size: xx-large;
+    color: black;
+  }
+  
+  menu .orange{
+    position: relative; 
+  }
+  menu .current4{
+    position: absolute;
+    z-index: 1;
+    top: 290px;
+    left: 440px;
+  }
+  menu .current4-{
+    display: none;
+    position: absolute;
+    z-index: 2;
+    top: 405px;
+    left: 585px;
+    font-size: xx-large;
+    color: black;
+  }
+  
+  footer{
+    /*position: static;*/
+    background-color: #FF99CC;
+    max-width: 100%;
+    margin-top: 700px;
+    height: 200px;
+    /*margin: 0 auto;*/
+    opacity: 0.8;
+  }
+
+  /*footer a{
+    float: left;
+    text-decoration: none;
+    font-size: 600%;
+    color: white;
+    margin-top: 2%;
+    margin-left: 48%;
+    margin-right: 5%;
+  }*/
+  footer p{
+    display: flex;
+    float: left;
+    font-size: 200%;
+    color: white;
+    margin-top: 6%;
+    margin-left: 1%;
+    /*margin-right: 5%;*/
+  }
+  
+  footer img{
+    float:left;
+    /*padding-left: 10%;*/
+    padding-top: 65%;
+    width: 40px;
+    height: 40px;
+  }
+  
+  footer a{
+    float:left;
+    text-decoration: none;
+    color: white;
+    font-size: 450%;
+    padding-top: 3%;
+    padding-left: 16%;
+  }
+  
+ 
+  /*.current1-{
+    opacity: 0;
+  }
+  .current1- :hover{
+    opacity: 1;
+    position: absolute;
+    top: 100px;
+    left: 150px;
+    font-size:x-large;
+    color: gray;
+  }*/
+}
+
+  
+  
+
+
+
+
+
+
+
+
+/*タブレット画面 1000px671px*/
+/*@media (max-width: 1000px / min-width: 671px)
+{
+  body {
+  margin:0;
+  padding:0;
+  text-align:left;
+  background-color: #fff;
+  font-size:0.85em;
+  }
+
+  header{
+    background-color: none;
+    /*border-bottom: 1px solid #fff;*/
+    /*text-align: center;
+  }
+
+  main{
+    
+    border-bottom:1px solid #ccc;
+    position:relative;
+    background-color: #fff;
+  }
+  main p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:200px;
+  }
+
+  main ul{
+    padding: 0;
+    /*border-top: 1px solid #000000;*/
+    /*display:table;  /* 定義 */
+    /*table-layout: fixed;
+    width:100%;
+  }
+
+
+/*メニューバー*/
+  /*ul{
+    display: table;
+    margin-top:　5px;
+    padding: 10px;
+    /*width: 80%;*/
+    /*text-align: center;
+  }
+  ul li{
+    display: table-cell;
+    min-width: 50px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  ul li.current1{
+    background-color: #FF9900;
+    width: 50px;
+  }
+  ul li.current2{
+    background-color: #66CC66;
+    width: 200px;
+  }
+  ul li.current3{
+    background-color: #FF99CC;
+    width: 100px;
+  }
+  ul li.current4{
+    background-color: #FF99CC;
+    width: 100px;
+  }
+  ul li.current5{
+    background-color: #FF99CC;
+    width: 100px;
+  }
+
+
+  div.up{
+    float:left;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  div.low{
+    float:left;
+    margin-left: 130px;
+     max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+
+
+  footer {
+    max-width: 800px;
+    background-color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 1350px;
+    margin: -10px;
+    z-index: 3;
+    /*border-top: 1px solid #CCC;*/
+  /*}
+  footer li{
+    display: table-cell;
+    padding:0px;
+    list-style-type: none;
+  }
+  
+  footer a{
+    padding-left:17px;
+    /*display: none;*/
+    /*color: black;
+  /*color: white;
+  text-align: center;
+  font-size: large; 
+  font-weight: bold;
+  /*background-color: #000;*/
+  /*text-decoration: none;*/
+ /* } 
+  
+  footer img {
+    margin-left: 17px;
+    padding: 20px;
+	/*background-color: none;
+	/*opacity:0.5;*/
+  /*}
+
+  footer #current:hover {
+    margin-left: 17px;
+    padding: 20px;
+	/*background-color: #FFCCFF;
+	/*opacity:0.5;*/
+  /*}
+  footer #current2:hover {
+    margin-left: 17px;
+    padding: 20px;
+	/*background-color: #FFCC99;
+	/*opacity:0.5;*/
+  /*}
+  footer #current3:hover {
+    margin-left: 17px;
+    padding: 20px;
+	/*background-color: #CCFF99;
+	/*opacity:0.5;*/
+  /*}
+  footer #current4:hover {
+    margin-left: 17px;
+    padding: 20px;
+	/*background-color: #99FFFF;
+	/*opacity:0.5;*/
+  /*}
+  
+  footer #current2 {
+    margin-left: 17px;
+    padding: 20px;
+    /*background-color: #FFCC99;*/
+  /*}  
+}*/
